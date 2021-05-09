@@ -1,0 +1,13 @@
+table th, table td{
+    color: #ece5e5;
+}
+
+.card {
+    background-color: #194350;
+    border: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}

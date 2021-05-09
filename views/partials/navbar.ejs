@@ -1,0 +1,40 @@
+<nav class="navbar sticky-top navbar-expand-lg">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#">Mentor Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <% if(currentUser) { %>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/campgrounds">About</a>
+            <a class="nav-link" href="/students/contact">Contact</a>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Profile
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/students/profile">My Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/students/mentors">Mentor's Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/students/faculties">Faculties Profile</a>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <% if(!currentUser) { %>
+            <a href="/login" class="nav-link">Login</a>
+            <a href="/register" class="nav-link">Register</a>
+            <% } else { %>
+            <a href="/logout" class="nav-link">Logout</a>
+            <% } %>
+        </div>
+    </div>
+
+
+</div>
+</nav>
