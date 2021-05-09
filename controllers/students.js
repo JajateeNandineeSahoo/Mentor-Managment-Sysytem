@@ -40,8 +40,8 @@ module.exports.sendContact = (req, res) => {
         port: 587,
     secure: false,
         auth: {
-            user: 'googlysahoo9', // generated ethereal user
-            pass: 'Gg8280080602@'  // generated ethereal password
+            user: '', // generated ethereal user
+            pass: ''  // generated ethereal password
         }
       });
 
