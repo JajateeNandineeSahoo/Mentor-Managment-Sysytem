@@ -2,10 +2,6 @@
     margin: 0.2rem 4rem;
 }
 
-.nav-link, .navbar-brand {
-    color: #ff8882;
-}
-
 .nav-link:hover, .navbar-brand:hover {
     color: #ff8882;
     text-decoration: underline;
@@ -13,10 +9,12 @@
 
 .navbar-brand {
     font-size: 30px;
+    color: #ff8882;
 }
 
 .nav-link {
     font-size: 20px;
+    color: #ece5e5;
 }
 
 .footer-body {

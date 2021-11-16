@@ -27,26 +27,23 @@ module.exports.sendContact = (req, res) => {
     <h5>You have a new query from your Mentee</h5>
     <h1>Name: ${req.body.name}</h1>
     <ul>  
-    <li>Name: ${req.body.branch}</li>
-    <li>Company: ${req.body.semester}</li>
+    <li>Branch: ${req.body.branch}</li>
+    <li>Semester: ${req.body.sem}</li>
     <li>Phone: ${req.body.phone}</li>
     </ul>
-    <h3>Message</h3>
-    <p>${req.body.message}</p>
+    <h3>Message: ${req.body.msg}</h3>
     `;
 
     var transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
-        port: 587,
-    secure: false,
         auth: {
-            user: '', // generated ethereal user
-            pass: ''  // generated ethereal password
+            user: 'googlysahoo9', // generated ethereal user
+            pass: 'Gg8280080602@'  // generated ethereal password
         }
       });
 
     let mailOptions = {
-        from: `"Mentee Query" ${req.body.semail}`, // sender address
+        from: `${req.body.semail}`, // sender address
         to: `${req.body.memail}`, // list of receivers
         subject: `${req.body.subject}`, // Subject line
         text: 'Hello world?', // plain text body
@@ -60,6 +57,6 @@ module.exports.sendContact = (req, res) => {
         console.log('Message sent: %s', info.messageId);   
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
       
-        res.render('/');
+        res.render('/students');
     });
 }

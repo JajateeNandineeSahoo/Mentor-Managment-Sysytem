@@ -1,3 +1,32 @@
+.navbar {
+    margin: 0.2rem 4rem;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #ff8882;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #ff8882;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #ece5e5;
+}
+
+.footer-body {
+    color: #e4aa9d;
+}
+
+.student-profile li, .mentor-profile li {
+    color: #ece5e5;
+    text-decoration: none;
+    list-style: none;
+}
+
 table th, table td{
     color: #ece5e5;
 }
@@ -7,7 +36,20 @@ table th, table td{
     border: none;
 }
 
+.card-body a {
+    color: #ece5e5;
+}
+
 img {
     width: 200px;
     height: 200px;
+}
+
+#contact-form {
+    background-color: #26525f;
+    margin: 2rem 20rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    position: relative;
+    height: 300px;
 }

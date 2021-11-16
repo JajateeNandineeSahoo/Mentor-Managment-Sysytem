@@ -1,0 +1,44 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container">
+    <h1>Contact Your Mentor</h1>
+    <form method="POST" id="contact-form" action="/students/create">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Enter Name">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="registrationNumber" placeholder="Enter registrationNumber">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="rollNumber" placeholder="Enter rollNumber">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="branch" placeholder="Enter branch">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="year" placeholder="Enter Year">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Enter Email">
+        </div>
+        <div class="mb-3">
+            <input type="number" class="form-control" name="phoneNumber" placeholder="Enter phoneNumber">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="street" placeholder="Enter Street">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="landmark" placeholder="Enter Landmark">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="city" placeholder="Enter City">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="state" placeholder="Enter State">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="country" placeholder="Enter Country">
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </form>
+</div>
